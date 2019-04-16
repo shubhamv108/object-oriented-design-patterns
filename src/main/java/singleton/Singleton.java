@@ -2,7 +2,7 @@ package singleton;
 
 public class Singleton {
 
-    private static Singleton INSTANCE = null;
+    private static /*volatile*/ Singleton INSTANCE = null;
 
     private Singleton() {}
 
