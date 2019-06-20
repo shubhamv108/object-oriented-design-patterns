@@ -22,11 +22,11 @@ class OtherObject1 implements OtherObject {
     }
 }
 
-class OriginalOjectAdapter implements OtherObject {
+class OriginalObjectAdapter implements OtherObject {
 
     private AbstractObject object;
 
-    public OriginalOjectAdapter (AbstractObject object) {
+    public OriginalObjectAdapter (AbstractObject object) {
         this.object = object;
     }
 
