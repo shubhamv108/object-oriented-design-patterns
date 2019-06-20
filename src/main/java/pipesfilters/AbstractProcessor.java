@@ -1,4 +1,4 @@
-package command;
+package pipesfilters;
 
 public abstract class AbstractProcessor<T>  {
 

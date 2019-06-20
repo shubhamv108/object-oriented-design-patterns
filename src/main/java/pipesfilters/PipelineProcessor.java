@@ -1,4 +1,4 @@
-package command;
+package pipesfilters;
 
 import java.util.ArrayList;
 import java.util.List;
