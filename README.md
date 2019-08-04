@@ -1,6 +1,6 @@
 Design Patterns
 
-1. Filters Pipes
+1. Pipes Filters
 2. Adapter
 3. Builder
 4. Composite
