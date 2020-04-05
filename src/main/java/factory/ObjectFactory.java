@@ -1,5 +1,10 @@
 package factory;
 
+/**
+ * It keeps the initialization logic of each object at one place, i.e inside the factory,
+ * so that the user remains unaware of it.
+ */
+
 abstract class AbstractObject {  }
 
 class Object1 extends AbstractObject {}
