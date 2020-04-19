@@ -11,6 +11,7 @@ Design Patterns
     5. Prototype
     
     6. Singleton
+    
 - Behavioral
     
     7.  Chain of Responsibility
@@ -18,14 +19,17 @@ Design Patterns
     8.  Command
     
     9.  Observer
+    
+    10. Visitor
+    
 - Structural  
     
-    10. Adapter 
+    11. Adapter 
     
-    11. Composite
+    12. Composite
     
-    12. Decorator
+    13. Decorator
     
-    13. Proxy 
+    14. Proxy 
     
-    14. Strategy
+    15. Strategy
