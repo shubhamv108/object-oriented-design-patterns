@@ -53,7 +53,7 @@ abstract class Observable implements Subject {
     @Override
     public void attach(Observer observer, Aspect aspect) {
         if (Objects.isNull(observer)) new IllegalArgumentException("Invalid observer");
-        if (Objects.isNull(aspect)) new IllegalArgumentException("Invalid aspect");
+        if (Objects.isNull(aspect))   new IllegalArgumentException("Invalid aspect");
         Set<Observer> aspectObservers = observers.get(aspect);
         if (aspectObservers == null) {
             aspectObservers = registerAspectAndGetObservers(aspect);
@@ -64,7 +64,7 @@ abstract class Observable implements Subject {
     @Override
     public void detach(Observer observer, Aspect aspect) {
         if (Objects.isNull(observer)) new IllegalArgumentException("Invalid observer");
-        if (Objects.isNull(aspect)) new IllegalArgumentException("Invalid aspect");
+        if (Objects.isNull(aspect))   new IllegalArgumentException("Invalid aspect");
         Set<Observer> aspectObservers = observers.get(aspect);
         if (aspectObservers == null) {
             throw new RuntimeException("No such observer registered");
@@ -89,7 +89,7 @@ abstract class Observable implements Subject {
 
     @Override
     public void notifyObservers(Object state, Aspect aspect) {
-        if (Objects.isNull(state)) new IllegalArgumentException("Invalid state");
+        if (Objects.isNull(state))  new IllegalArgumentException("Invalid state");
         if (Objects.isNull(aspect)) new IllegalArgumentException("Invalid aspect");
         Set<Observer> aspectObservers = observers.get(aspect);
         aspectObservers.forEach(observer -> push(observer, state));
