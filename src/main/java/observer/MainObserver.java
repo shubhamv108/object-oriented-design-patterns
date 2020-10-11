@@ -1,9 +1,9 @@
 package observer;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 
@@ -48,7 +48,7 @@ interface Subject {
 
 abstract class Observable implements Subject {
 
-    final Map<Aspect, Set<Observer>> observers = new HashMap<>();
+    final Map<Aspect, Set<Observer>> observers = new ConcurrentHashMap<>();
 
     @Override
     public void attach(Observer observer, Aspect aspect) {

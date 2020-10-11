@@ -1,15 +1,31 @@
 package command;
 
-import chainofresponsibility.Request;
+import command.commands.CommandFour;
+import command.commands.CommandOne;
+import command.commands.CommandThree;
+import command.commands.CommandTwo;
+import command.invokers.InvokerOne;
+import command.invokers.QueuedInvoker;
+import command.receivers.ReceiverOne;
 
 public class Main {
 
     public static void main(String[] args) {
-        Request request = new Request();
-        CommandOne<Request> commandOne = new CommandOne<>(request);
-        Invoker invoker = new Invoker();
-        invoker.invoke(commandOne);
-        invoker.invoke(() -> {});
+        CommandOne commandOne = new CommandOne(new ReceiverOne());
+        QueuedInvoker queuedInvoker = new QueuedInvoker();
+        queuedInvoker.setCommand(commandOne);
+
+        InvokerOne invokerOne = new InvokerOne(
+                new CommandOne(new ReceiverOne()),
+                new CommandTwo(new ReceiverOne()),
+                new CommandThree(new ReceiverOne()),
+                new CommandFour(new ReceiverOne())
+        );
+
+        invokerOne.executeOne();
+        invokerOne.executeTwo();
+        invokerOne.executeThree();
+        invokerOne.executeFour();
     }
 
 }
