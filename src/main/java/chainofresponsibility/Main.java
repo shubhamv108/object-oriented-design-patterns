@@ -3,13 +3,13 @@ package chainofresponsibility;
 public class Main {
 
     public static void main(String[] args) {
-        HandlerOne<Request> handlerOne = new HandlerOne<>();
-        HandlerTwo<Request> handlerTwo = new HandlerTwo<>();
-        HandlerThree<Request> handlerThree = new HandlerThree<>();
+        HandlerOne<HandlerData<Object, Object>> handlerOne = new HandlerOne<>();
+        HandlerTwo<HandlerData<Object, Object>> handlerTwo = new HandlerTwo<>();
+        HandlerThree<HandlerData<Object, Object>> handlerThree = new HandlerThree<>();
         handlerOne.setNext(handlerTwo);
         handlerTwo.setNext(handlerThree);
-        handlerOne.handle(new Request());
-        handlerOne.handleByAnyOne(new Request());
+        handlerOne.handle(new HandlerData<Object, Object>(new Object()));
+        handlerOne.handleByAnyOne(new HandlerData<Object, Object>(new Object()));
     }
 
 }
