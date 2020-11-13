@@ -12,6 +12,8 @@ Design Patterns
     
     6. Singleton
     
+    7. Abstract Factory 
+    
 - Behavioral
     
     7.  Chain of Responsibility
@@ -33,3 +35,5 @@ Design Patterns
     14. Proxy 
     
     15. Strategy
+
+    16. Bridge
