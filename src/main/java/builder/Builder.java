@@ -15,16 +15,10 @@ class Object1 {
         return new Builder();
     }
 
-    public static class Builder {
-        private List<Object1> objects = new ArrayList<>();
+    public static class Builder implements IBuilder<Object> {
+        private final List<Object1> objects = new ArrayList<>();
 
         private Object attribute;
-
-        public Object1 build() {
-            Object1 object = new Object1();
-            object.attribute = this.attribute;
-            return object;
-        }
 
 //        public List<Object1> build() {
 //            return objects;
@@ -41,6 +35,13 @@ class Object1 {
 //            objects.add(object);
 //            return this;
 //        }
+
+        @Override
+        public Object1 build() {
+            Object1 object = new Object1();
+            object.attribute = this.attribute;
+            return object;
+        }
 
     }
 
