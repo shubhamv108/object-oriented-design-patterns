@@ -1,5 +1,9 @@
 package principles.solid;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * High-level modules should not depend on low-level modules. Both should depend on abstractions.
  * Abstractions should not depend on details. Details should depend on abstractions.
@@ -37,5 +41,9 @@ public class DependencyInversion {
         }
     }
 
+    static int c = 0;
+    public static void main(String[] args) {
+        System.out.println("apple".compareTo("banana"));
+    }
 
 }
