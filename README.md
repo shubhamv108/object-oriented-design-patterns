@@ -37,3 +37,5 @@ Design Patterns
     15. [Strategy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/strategy)
 
     16. [Bridge](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/bridge)
+
+    17. [Flyweight](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/flyweight)
