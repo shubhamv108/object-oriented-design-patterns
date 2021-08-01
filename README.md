@@ -6,25 +6,25 @@ Design Patterns
     
     2. [Factory](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/factory)
     
-    3. [Pipes Filters](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/pipesfilters)
+    3. [Prototype](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/prototype)
     
-    4. [Prototype](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/prototype)
+    4. [Singleton](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/singleton)
     
-    5. [Singleton](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/singleton)
-    
-    6. [Abstract Factory](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/abstractfactory)
+    5. [Abstract Factory](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/abstractfactory)
     
 - Behavioral
     
-    7.  [Chain of Responsibility](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/chainofresponsibility)
+    6.  [Chain of Responsibility](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/chainofresponsibility)
     
-    8.  [Command](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/command)
+    7.  [Command](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/command)
     
-    9.  [Observer](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/observer)
+    8.  [Observer](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/observer)
     
-    10. [Visitor](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/visitor)
+    9. [Visitor](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/visitor)
     
-    11. [Memento](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/memento)
+    10. [Memento](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/memento)
+
+    11. [Pipes Filters](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/pipesfilters)
     
 - Structural  
     
