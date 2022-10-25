@@ -1,9 +1,9 @@
 package iterator.implementations;
 
-import iterator.IContainer;
+import iterator.IIterable;
 import iterator.IIterator;
 
-public abstract class AbstractCollection<Object> implements IContainer<Object> {
+public abstract class AbstractCollection<Object> implements IIterable<Object> {
 
     protected java.lang.Object[] collection;
     protected int size;

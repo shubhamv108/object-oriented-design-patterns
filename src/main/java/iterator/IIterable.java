@@ -1,6 +1,6 @@
 package iterator;
 
-public interface IContainer<Object> {
+public interface IIterable<Object> {
 
     IIterator<Object> iterator();
 

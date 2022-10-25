@@ -2,7 +2,7 @@
     - Typical solutions to commonly occurring problems in software design.
     - Blueprints that can be used to customize to solve a particular design problem in your code.
     - Well known way of solving a well known problem. (Template for solving problem)
-    - Simpler Communication in one phrase
+    - Simpler communication in one phrase
 
 ## OOPS
 #### Abstraction
