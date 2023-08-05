@@ -50,16 +50,16 @@
     15. [Iterator](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/iterator)
 
     16. [Null Object](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/nullobject)
+ 
+    17. [Strategy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/strategy)
 
 - Structural  
     
-    17. [Adapter](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/adapter)
+    18. [Adapter](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/adapter)
     
-    18. [Decorator](https://github.com/shubham-v/object-oriented-design-patterns/blob/main/src/main/java/decorator/Decorator.java)
+    19. [Decorator](https://github.com/shubham-v/object-oriented-design-patterns/blob/main/src/main/java/decorator/Decorator.java)
     
-    19. [Proxy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/proxy)
-    
-    20. [Strategy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/strategy)
+    20. [Proxy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/proxy)
 
     21. [Bridge](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/bridge)
 
