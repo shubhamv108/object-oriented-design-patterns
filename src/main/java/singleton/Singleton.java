@@ -1,16 +1,30 @@
 package singleton;
 
 class Singleton {
-
-    private static volatile Singleton INSTANCE = null;
-
     private Singleton() {}
-
+    private static final Singleton INSTANCE = new Singleton();
     public static Singleton getInstance() {
+        return INSTANCE;
+    }
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        throw new CloneNotSupportedException();
+    }
+    protected Object readResolve() {
+        return INSTANCE;
+    }
+}
+
+class Singleton2 {
+    private static volatile Singleton2 INSTANCE = null;
+
+    private Singleton2() {}
+
+    public static Singleton2 getInstance() {
         if (INSTANCE == null) {
-            synchronized (Singleton.class) {
+            synchronized (Singleton2.class) {
                 if (INSTANCE == null)
-                    INSTANCE = new Singleton();
+                    INSTANCE = new Singleton2();
             }
         }
         return INSTANCE;
@@ -26,15 +40,15 @@ class Singleton {
     }
 }
 
-class Singleton2 {
-    private Singleton2() {}
+class Singleton3 {
+    private Singleton3() {}
 
-    public static Singleton2 getInstance() {
-        return SingletonInitializer.INSTANCE;
+    public static Singleton3 getInstance() {
+        return SingletonHolder.INSTANCE;
     }
 
-    private static class SingletonInitializer {
-        private static final Singleton2 INSTANCE = new Singleton2();
+    private static class SingletonHolder {
+        private static final Singleton3 INSTANCE = new Singleton3();
     }
 
     @Override
@@ -43,11 +57,11 @@ class Singleton2 {
     }
 
     protected Object readResolve() {
-        return Singleton2.getInstance();
+        return Singleton3.getInstance();
     }
 }
 
-enum Singleton3 {
+enum Singleton4 {
     INSTANCE
 }
 
