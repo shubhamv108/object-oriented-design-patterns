@@ -38,10 +38,15 @@
     
     1.   [Builder](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/builder)
           - Seperate construction of object from its representation.
+          - avoiding a constructor with numerous parameters
           - Perform validations
           - Creation of object is easier and resillient
-          - Director class orchestrates the construction process using builder interface to construct actual objects.
+          - Director - any class orchestrates the construction process using builder interface to construct actual objects.
           - Final objects return to client by Director
+          - complexity
+          - enhancement
+          - loose coupling
+          - extensibility
     
     2.   [Factory](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/factory)
          - Segregating the logic for creating the object wherever required
@@ -61,6 +66,8 @@
     7.   [Strategy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/strategy)
 
     8.   [Chain of Responsibility](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/chainofresponsibility)
+         - Allows an object to pass through a chain of handler.
+         - Handlers will decide either to process or pass the request to next handler.
     
     9.   [Command](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/command)
     
@@ -79,6 +86,8 @@
     16. [Null Object](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/nullobject)
  
     17. [Strategy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/strategy)
+        - selecting algorithm or behaviour at runtime
+        - encourages composition over inheritance
   
     18. [State]()
 
@@ -87,8 +96,21 @@
     19. [Adapter](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/adapter)
     
     20. [Decorator](https://github.com/shubham-v/object-oriented-design-patterns/blob/main/src/main/java/decorator/Decorator.java)
+        - add additional responsibilities dynamically
+        - used with Inheritance
+        - used for Open Closed Principle
+        - maintains interface to pizza object
+        - Structure
+          - Component
+          - ConcreteComponent
+          - Decorator (Wrapper along with Reference to component)
+          - Concrete Decorator
+        - example: Pizza, Coffee, Premium subscription
     
     21. [Proxy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/proxy)
+        - Placeholder to control and access another object without modifying the code
+        - lazy loading of object
+        - controll access. eg security contruct
 
     22. [Bridge](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/bridge)
 
