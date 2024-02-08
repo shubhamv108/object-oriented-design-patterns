@@ -90,6 +90,11 @@
         - encourages composition over inheritance
   
     18. [State]()
+        - allow state change when behaviour is going to be chnaged
+        - encapsulation of the behavior associated with the state
+        - Behavior of a particular classes and entities
+        - deals with conditional aspects
+        - context - mantains current state of the object
 
 - Structural  
     
@@ -118,7 +123,11 @@
   
     24. [Facade](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/facade/Facade.java)
         - Way to hide complexity of a subsystem.
-        - Do not expose what is not necessary
+        - "Do not expose what is not necessary" principle
+        - loose coupling
+        - high level user friendly interface
+        - encourages encapsulation
+        - seperation of concerns so that clinet have easiness to use the subsystem
 
 ## Enums
     Use when dealing FINITE set of things
