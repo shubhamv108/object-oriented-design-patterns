@@ -14,7 +14,7 @@ import java.util.List;
 public class DependencyInversion {
 
     interface IWorker {
-        public void work();
+        void work();
     }
 
     class Worker implements IWorker{
@@ -32,7 +32,7 @@ public class DependencyInversion {
     class Manager {
         IWorker worker;
 
-        public void setWorker(IWorker worker) {
+        public void setWorker(final IWorker worker) {
             this.worker = worker;
         }
 

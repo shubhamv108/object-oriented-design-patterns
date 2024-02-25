@@ -1,37 +1,25 @@
 package adapter;
 
-interface AbstractObject {
-    String destroyAndGetName();
-}
-
-class Object1 implements AbstractObject {
-    @Override
+class Adaptee {
     public String destroyAndGetName() {
-        return "Object1";
+        return "Adaptee";
     }
 }
 
-interface OtherObject {
+interface Target {
     String killAndGetName();
 }
 
-class OtherObject1 implements OtherObject {
-    @Override
-    public String killAndGetName() {
-        return "OtherObject1";
-    }
-}
+class Adapter implements Target {
 
-class OriginalObjectAdapter implements OtherObject {
+    private Adaptee adaptee;
 
-    private AbstractObject object;
-
-    public OriginalObjectAdapter (AbstractObject object) {
-        this.object = object;
+    public Adapter(final Adaptee adaptee) {
+        this.adaptee = adaptee;
     }
 
     @Override
     public String killAndGetName() {
-        return object.destroyAndGetName();
+        return this.adaptee.destroyAndGetName();
     }
 }

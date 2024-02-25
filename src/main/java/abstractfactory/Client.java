@@ -7,7 +7,6 @@ import abstractfactory.products.productB.AbstractProductB;
 public class Client {
 
     public static void main(String[] args) {
-
         AbstractFactory factoryOne = FactoryMaker.getFactory("One");
         AbstractProductA productA1 = factoryOne.createProductA();
         AbstractProductB productB1 = factoryOne.createProductB();
@@ -20,7 +19,6 @@ public class Client {
         System.out.println(productB1.getName());
         System.out.println(productA2.getName());
         System.out.println(productB2.getName());
-
     }
 
 }

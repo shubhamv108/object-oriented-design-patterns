@@ -3,7 +3,7 @@ package prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Prototype implements Cloneable {
+public abstract class Prototype implements Cloneable {
     public Object clone() {
         try {
             return super.clone();

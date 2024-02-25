@@ -27,6 +27,43 @@
         - like inheritance
 
 
+## SOLID
+- conventions 
+- create maintainable, extensible, flexible s/w 
+- SOLID principle provides/helps
+  - Testing
+  - Modularity
+  - Coupling
+### Single Responsibility Principle
+- A class should have only one reason/responsibility to change.
+- class adheres to SRP
+  - Identify responsibility
+  - Separation of concerns
+- Scenarios that violate SRP
+    - God class
+      - split into smaller classes handling single reposibility
+### Open-Closed Principle
+- A class should be open for extension but closed for modification
+### Liskov-substitution
+- Base/Derieved class pointer should be interchangeable
+- object of super class should be easily replecable with object of subclass
+- subclass should preserve behavior of superclass
+- requires
+  - Behavorieal Presentation
+### Interface seggregation
+- A class should not "forced to" implement interfaces or implement interface methods which it does not require
+- remove/avoid unnecessary dependencies
+- flexibility/dependencies
+- What should not do 
+  - Avoid bloating 
+### Dependency Inversion
+- Use interface/abstract class for dependency rather concrete implementation
+- loose coupling
+- Flexible, easier to test, maintable
+
+##### Inversion of control
+- 
+
 ## Design Patterns
     - Typical solutions to commonly occurring problems in software design.
     - Blueprints that can be used to customize to solve a particular design problem in your code.
@@ -52,6 +89,10 @@
          - Segregating the logic for creating the object wherever required
     
     3.   [Prototype](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/prototype)
+         - Cloning of the object (based on the existing ones)
+         - Document Management system (clone document)
+         - DB entity (clone db entity)
+         - configuration management
     
     4.   [Singleton](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/singleton)
          - Single object getting created throughout the scope of execution.
@@ -70,8 +111,21 @@
          - Handlers will decide either to process or pass the request to next handler.
     
     9.   [Command](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/command)
+         - Required when want to convert Actions/Requests/Methods into first class entity(object)
+         - Encapsulates the requests as an object which allows parameterization of client
     
     10.  [Observer](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/observer)
+         - For notifications
+         - Observer
+         - Observable
+         - One to Many relationship
+         - change in 1 leads to chnage in multiple
+         - without making tightly coupled
+         - dynamic chnages in number of observers and their types
+         - when to use
+           - Flexibilty & decoupling
+           - Real-Time updates
+           - Dynamic Relationships
     
     11. [Visitor](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/visitor)
     
@@ -99,6 +153,13 @@
 - Structural  
     
     19. [Adapter](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/adapter)
+        - Allows objects with incompatible interfaces to work together.
+        - Acting as a bridge b/w incompatible interfaces
+        - "adpats" the interface of one class to match interface of another class
+        - usability
+          - Integrate with 3rd party libraries or APIs
+          - Legacy System Interoperability
+          - Interface Standardization in Large Systems
     
     20. [Decorator](https://github.com/shubham-v/object-oriented-design-patterns/blob/main/src/main/java/decorator/Decorator.java)
         - add additional responsibilities dynamically
@@ -114,8 +175,16 @@
     
     21. [Proxy](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/proxy)
         - Placeholder to control and access another object without modifying the code
-        - lazy loading of object
-        - controll access. eg security contruct
+        - lazy loading of object or initialization on demand
+        - control access. example security construct
+        - Usage & Usability
+          - Adding layer of control over real object
+          - lazy loading of expensive operation
+          - access control from the object
+        - Use cases
+          - Caching
+          - Logging
+          - Login
 
     22. [Bridge](https://github.com/shubham-v/object-oriented-design-patterns/tree/main/src/main/java/bridge)
 
@@ -125,9 +194,9 @@
         - Way to hide complexity of a subsystem.
         - "Do not expose what is not necessary" principle
         - loose coupling
-        - high level user friendly interface
+        - high level user-friendly interface
         - encourages encapsulation
-        - seperation of concerns so that clinet have easiness to use the subsystem
+        - separation of concerns so that client have easiness to use the subsystem
 
 ## Enums
     Use when dealing FINITE set of things
@@ -143,3 +212,18 @@
     - In composition - it is providing flixibility, encapsulation, easily extensible, easily modifiable, decoupled
     - Composition avoids Diamond problem
 ### Favour Composition Over Inheritance (FOI Principle)
+
+## Clean Code Practices
+    1.  Names of variables
+    2.
+    3.  Comments
+         eg. counter++; // Adding 1 to counter   X
+             counter++; // Incrementing counter
+    4.  Cormatting/Indentation
+    5.  Avoiding Magic numbers
+    6.  Exception
+    7.  Duplicate code avoiding (DRY)
+    8.  Single Responsibility principle
+    9.  Methods/Codebase should be small
+    10. Classes should be small
+    11. Clean/readable Unit test + cover all scenarios (very important)
