@@ -44,22 +44,26 @@
       - split into smaller classes handling single reposibility
 ### Open-Closed Principle
 - A class should be open for extension but closed for modification
+- Example: Adapters for payment processors
 ### Liskov-substitution
 - Base/Derieved class pointer should be interchangeable
 - object of super class should be easily replecable with object of subclass
 - subclass should preserve behavior of superclass
 - requires
   - Behavorieal Presentation
+- Exmple: Adapters for payment processors
 ### Interface seggregation
 - A class should not "forced to" implement interfaces or implement interface methods which it does not require
 - remove/avoid unnecessary dependencies
 - flexibility/dependencies
 - What should not do 
-  - Avoid bloating 
+  - Avoid bloating
+- Example : saveCardDetails() require a seperate interface for Payment processor
 ### Dependency Inversion
 - Use interface/abstract class for dependency rather concrete implementation
 - loose coupling
 - Flexible, easier to test, maintable
+- Example: Injecting Payment Processr Adapter into payment service. 
 
 ##### Inversion of control
 - 
